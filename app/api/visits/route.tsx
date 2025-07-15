@@ -1,8 +1,7 @@
 // app/api/visits/route.ts
 import { redis } from "@/lib/redis";
-import { NextRequest } from "next/server";
 
-export async function GET(req: NextRequest) {
+export async function GET() {
   const count = await redis.get<number>("visitCount") ?? 0;
 
   return new Response(JSON.stringify({ count }), {
@@ -10,7 +9,7 @@ export async function GET(req: NextRequest) {
   });
 }
 
-export async function POST(req: NextRequest) {
+export async function POST() {
   const count = await redis.incr("visitCount");
 
   return new Response(JSON.stringify({ count }), {
