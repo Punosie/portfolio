@@ -7,7 +7,7 @@ import ParticlesBackground from "@/components/particlesBackground";
 
 export default function AboutPage() {
   return (
-    <div className="relative min-h-screen bg-transparent font-[family-name:var(--font-geist-sans)] overflow-hidden">
+    <div className="relative animate-fade animate-ease-in min-h-screen bg-transparent font-[family-name:var(--font-geist-sans)] animate-fade animate-ease-in overflow-hidden">
       {/* Background */}
       <ParticlesBackground />
 

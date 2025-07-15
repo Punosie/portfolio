@@ -60,7 +60,7 @@ export default function FeedbackForm() {
   };
 
   return (
-    <div className="flex items-center justify-center px-4 py-20 sm:px-8 w-5xl">
+    <div className="flex animate-fade animate-ease-in items-center justify-center px-4 py-20 sm:px-8 w-5xl">
       <div className="w-full max-w-xl bg-transparent backdrop-blur-xs p-8 rounded-xl border border-neutral-700 text-neutral-200 shadow-md">
         <h2 className="text-2xl font-bold mb-6 text-center">Send Feedback</h2>
         <Form {...form}>

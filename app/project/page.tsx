@@ -123,7 +123,7 @@ export default function ProjectsPage() {
   const [openProject, setOpenProject] = useState<number | null>(null);
 
   return (
-    <div className="relative min-h-screen text-neutral-100 font-[family-name:var(--font-geist-sans)]">
+    <div className="relative animate-fade animate-ease-in min-h-screen text-neutral-100 font-[family-name:var(--font-geist-sans)]">
       <ParticlesBackground />
       <div className="flex justify-center p-4">
         <Navbar />

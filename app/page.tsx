@@ -11,7 +11,7 @@ export default function Home() {
       <main className="flex flex-col row-start-2 items-center sm:items-start z-10">
         <div>
           {/* Navigation Links */}
-          <div className="text-neutral-500 flex gap-6 mb-3 justify-center ">
+          <div className="text-neutral-500 animate-delay-[250ms] animate-fade animate-ease-in flex gap-6 mb-3 justify-center ">
             <Link href="/about">
               <span className="text-xs xl:text-lg tracking-wider cursor-pointer underline underline-offset-[10px] decoration-black hover:text-neutral-300 hover:decoration-neutral-300 transition-all duration-350 ease-in-out delay-100">
                 About Me
@@ -30,7 +30,7 @@ export default function Home() {
           </div>
 
           {/* Title */}
-          <div className="py-2.5 px-0.5 font-bold text-6xl text-center sm:text-6xl md:text-9xl text-neutral-200 tracking-wide">
+          <div className="py-2.5 px-0.5 animate-fade animate-ease-in font-bold text-6xl text-center sm:text-6xl md:text-9xl text-neutral-200 tracking-wide">
             <h1 >punosie</h1>
           </div>
         </div>
