@@ -125,9 +125,12 @@ export default function ProjectsPage() {
   return (
     <div className="relative animate-fade animate-ease-in min-h-screen text-neutral-100 font-[family-name:var(--font-geist-sans)]">
       <ParticlesBackground />
-      <div className="fixed bottom-6 sm:top-6 left-1/2 transform -translate-x-1/2 z-50">
-        <Navbar />
+      <div className="fixed bottom-6 sm:top-6 left-1/2 transform -translate-x-1/2 z-50 pointer-events-none">
+        <div className="pointer-events-auto">
+          <Navbar />
+        </div>
       </div>
+
       <div className="relative z-10 px-6 py-24 sm:px-16">
         {/* Header */}
         <div className="text-center mb-14">

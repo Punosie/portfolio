@@ -11,9 +11,10 @@ export default function AboutPage() {
       {/* Background */}
       <ParticlesBackground />
 
-      {/* Fixed Navbar on Top Center */}
-      <div className="fixed bottom-6 sm:top-6 left-1/2 transform -translate-x-1/2 z-50">
-        <Navbar />
+      <div className="fixed bottom-6 sm:top-6 left-1/2 transform -translate-x-1/2 z-50 pointer-events-none">
+        <div className="pointer-events-auto">
+          <Navbar />
+        </div>
       </div>
 
       {/* Foreground content */}
