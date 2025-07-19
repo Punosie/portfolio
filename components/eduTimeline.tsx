@@ -1,7 +1,5 @@
-"use client";
-
 import { Badge } from "@/components/ui/badge";
-import { cn } from "@/lib/utils";
+import { GraduationCap } from "lucide-react";
 
 const education = [
   {
@@ -18,44 +16,16 @@ const education = [
 
 export default function EducationTimeline() {
   return (
-    <section className="mt-24 px-4">
-      <h2 className="text-2xl font-bold text-neutral-100 mb-16 text-center">
+    <section className="sm:mt-24 px-4 max-w-3xl mx-auto">
+      <h2 className="text-3xl font-bold text-neutral-100 mb-12 text-center flex items-center justify-center gap-2">
+        <GraduationCap size={24} className="text-neutral-400" />
         Education
       </h2>
-
-      <div className="relative">
-        <div className="hidden sm:block absolute left-1/2 -translate-x-1/2 h-full w-px bg-neutral-700 " />
-
-        <div className="space-y-12">
-          {education.map((edu, i) => {
-            const isLeft = i % 2 === 0;
-
-            return (
-              <div
-                key={i}
-                className={cn(
-                  "relative flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-0",
-                  isLeft ? "sm:justify-start" : "sm:justify-end"
-                )}
-              >
-                {/* Left content */}
-                {isLeft && (
-                  <div className="sm:w-1/2 sm:pr-8 w-full sm:text-right">
-                    <TimelineCard {...edu} align="right" />
-                  </div>
-                )}
-
-                {/* Right content */}
-                {!isLeft && (
-                  <div className="sm:w-1/2 sm:pl-8 w-full sm:text-left">
-                    <TimelineCard {...edu} align="left" />
-                  </div>
-                )}
-              </div>
-            );
-          })}
+      {education.map((edu, i) => (
+        <div key={i} className="relative mt-4 sm:mt-10">
+          <TimelineCard {...edu} />
         </div>
-      </div>
+      ))}
     </section>
   );
 }
@@ -64,22 +34,13 @@ function TimelineCard({
   degree,
   duration,
   description,
-  align,
 }: {
   degree: string;
   duration: string;
   description: string[];
-  align: "left" | "right" | "center";
 }) {
   return (
-    <div
-      className={cn(
-        "bg-transparent border border-neutral-700 backdrop-blur-xs rounded-xl p-4 sm:p-5 w-full transition hover:shadow-md hover:border-neutral-500",
-        align === "center" && "text-center",
-        align === "right" && "text-right ml-auto",
-        align === "left" && "text-left mr-auto"
-      )}
-    >
+    <div className="bg-black/10 backdrop-blur-sm border h-[200px] border-neutral-700 rounded-xl p-5 transition hover:shadow-lg hover:border-neutral-500">
       <h3 className="text-lg font-semibold text-neutral-100">{degree}</h3>
       <Badge className="bg-neutral-800 border-neutral-700 text-neutral-300 my-2">
         {duration}

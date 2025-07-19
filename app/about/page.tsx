@@ -12,7 +12,7 @@ export default function AboutPage() {
       <ParticlesBackground />
 
       {/* Fixed Navbar on Top Center */}
-      <div className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
+      <div className="fixed bottom-6 sm:top-6 left-1/2 transform -translate-x-1/2 z-50">
         <Navbar />
       </div>
 
@@ -44,14 +44,16 @@ export default function AboutPage() {
           <Skills />
         </div>
 
-        {/* Experience Timeline */}
-        <div className="mt-24">
-          <ExperienceTimeline />
-        </div>
+        <div className="flex flex-col lg:flex-row gap-12 mt-24">
+          {/* Experience Timeline */}
+          <div className="w-full lg:w-1/2">
+            <ExperienceTimeline />
+          </div>
 
-        {/* Education Timeline */}
-        <div className="mt-24">
-          <EducationTimeline />
+          {/* Education Timeline */}
+          <div className="w-full lg:w-1/2">
+            <EducationTimeline />
+          </div>
         </div>
       </div>
     </div>

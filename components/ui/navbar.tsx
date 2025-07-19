@@ -56,17 +56,17 @@ export function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="bg-transparent backdrop-blur-xs rounded-full">
-      <nav className="flex gap-4 px-4 py-2.5 items-center justify-center w-full border border-neutral-600 rounded-full bg-transparent backdrop-blur-sm">
+    <div className="bg-transparent backdrop-blur-sm sm:backdrop-blur-xs rounded-full">
+      <nav className="scrollbar-none flex gap-4 px-4 py-2.5 items-center justify-start overflow-x-auto w-[200px] sm:w-full border border-neutral-600 rounded-full bg-transparent backdrop-blur-sm scroll-smooth [-webkit-overflow-scrolling:touch]">
         {navOptions.map((option, index) => {
           const isActive = !option.external && pathname === option.href;
 
           const commonClasses =
             "flex items-center transition-all duration-300 ease-in-out";
           const hoverEffect =
-            "hover:scale-125 hover:shadow-xl hover:shadow-amber-400 hover:underline underline-offset-4";
+            "hover:scale-125 hover:shadow-xl hover:shadow-purple-400 hover:underline underline-offset-4";
           const activeEffect =
-            "text-amber-400 underline underline-offset-4 scale-110";
+            "text-purple-400 underline underline-offset-4 scale-110";
 
           return (
             <div key={option.href} className="flex items-center h-5 gap-4">

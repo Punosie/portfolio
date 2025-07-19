@@ -13,17 +13,17 @@ export default function Home() {
           {/* Navigation Links */}
           <div className="text-neutral-500 animate-delay-[250ms] animate-fade animate-ease-in flex gap-6 mb-3 justify-center ">
             <Link href="/about">
-              <span className="text-xs xl:text-lg tracking-wider cursor-pointer underline underline-offset-[10px] decoration-black hover:text-neutral-300 hover:decoration-neutral-300 transition-all duration-350 ease-in-out delay-100">
+              <span className="text-sm xl:text-lg tracking-wider cursor-pointer underline underline-offset-[10px] decoration-black hover:text-neutral-300 hover:decoration-neutral-300 transition-all duration-350 ease-in-out delay-100">
                 About Me
               </span>
             </Link>
             <Link href="/project">
-              <span className="text-xs xl:text-lg tracking-wider cursor-pointer underline underline-offset-[10px] decoration-black hover:text-neutral-300 hover:decoration-neutral-300 transition-all duration-350 ease-in-out delay-100">
+              <span className="text-sm xl:text-lg tracking-wider cursor-pointer underline underline-offset-[10px] decoration-black hover:text-neutral-300 hover:decoration-neutral-300 transition-all duration-350 ease-in-out delay-100">
                 Projects
               </span>
             </Link>
             <Link href="/contact">
-              <span className="text-xs xl:text-lg tracking-wider cursor-pointer underline underline-offset-[10px] decoration-black hover:text-neutral-300 hover:decoration-neutral-300 transition-all duration-350 ease-in-out delay-100">
+              <span className="text-sm xl:text-lg tracking-wider cursor-pointer underline underline-offset-[10px] decoration-black hover:text-neutral-300 hover:decoration-neutral-300 transition-all duration-350 ease-in-out delay-100">
                 Contact
               </span>
             </Link>
