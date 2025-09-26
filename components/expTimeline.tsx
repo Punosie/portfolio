@@ -4,8 +4,18 @@ import { Briefcase } from "lucide-react";
 const experiences = [
   {
     title: "SDE Intern",
+    company: "Finzen India Pvt Ltd",
+    duration: "Present",
+    description: [
+      "Developed frontend and backend features for a loan management app used by ~30+ connectors, reducing lead allocation time by 40%.",
+      "Created a CMS with analytics dashboard to visualise and manage the data.",
+      "Published and maintained the app on the App Store, enabling real-time access for users.",
+    ],
+  },
+  {
+    title: "SDE Intern",
     company: "Orangewood",
-    duration: "May 2024 – Present",
+    duration: "May 2024 – Nov 2024",
     description: [
       "Built a 3D configurator using Three.js & React.",
       "Trained YOLOv8 model for 6-DOF robot tracking.",

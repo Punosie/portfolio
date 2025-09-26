@@ -52,6 +52,10 @@ export default function Skills() {
               label="React.js"
             />
             <Skill
+              icon={<FaReact className="text-cyan-300" />}
+              label="React Native"
+            />
+            <Skill
               icon={<SiNextdotjs className="text-white" />}
               label="Next.js"
             />
